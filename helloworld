@@ -11,7 +11,5 @@ RUN mkdir -p /opt/miniconda && \
     rm -r /opt/miniconda/pkgs && \
     #echo "export PATH=/opt/conda/bin:$PATH" >> ~/.bashrc &&\
     /bin/bash -c "source /opt/miniconda/bin/activate" && conda init &&\
-    conda install python=3.7
-
-RUN pip3 install ont-bonito==0.3.2 -i https://pypi.doubanio.com/simple
+    conda install python=3.7 && pip install ont-bonito==0.3.2 -i https://pypi.doubanio.com/simple
 
