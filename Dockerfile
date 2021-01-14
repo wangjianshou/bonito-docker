@@ -1,5 +1,5 @@
 #from nvidia/cuda:11.1-cudnn8-runtime-ubuntu18.04
-from nvidia/cuda:10.2-runtime
+from nvidia/cuda:10.2-runtime-ubuntu18.04
 RUN apt-get update && \
     apt-get install -y python3 python3-pip && \
 		apt-get install zlib1g-dev  &&\
